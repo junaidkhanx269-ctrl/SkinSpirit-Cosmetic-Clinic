@@ -1,0 +1,6 @@
+{
+  "name": "SkinSpirit Cosmetic Clinic | Sydney CBD",
+  "description": "Sydney's most trusted cosmetic injectable & advanced skin clinic at 650 George St. Natural results that last backed by 10+ years expertise.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
