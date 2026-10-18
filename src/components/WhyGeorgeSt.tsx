@@ -1,5 +1,5 @@
 import React from 'react';
-import { CLINIC_INFO, WHY_GEORGE_ST_POINTS, getWhatsAppLink } from '../data/clinicData';
+import { CLINIC_INFO, WHY_GEORGE_ST_POINTS, clinicSuiteImg } from '../data/clinicData';
 import { Train, ShieldCheck, Clock, MapPin, Navigation, ArrowUpRight, Phone } from 'lucide-react';
 
 export const WhyGeorgeSt: React.FC = () => {
@@ -68,9 +68,12 @@ export const WhyGeorgeSt: React.FC = () => {
             <div className="space-y-6">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#ECE5DA]">
                 <img
-                  src="/src/assets/images/clinic_luxury_suite_1792302365394.jpg"
+                  src={clinicSuiteImg}
                   alt="Ultra-luxury limestone consultation suite at 650 George St Sydney"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/clinic_luxury_suite_1792302365394.jpg';
+                  }}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-md text-[11px] text-white font-medium">

@@ -1,4 +1,11 @@
 import { Treatment, PriceItem, Review, BeforeAfterCase } from '../types';
+import heroSydneyImg from '../assets/images/hero_sydney_clinic_model_1792302362982.jpg';
+import antiWrinkleImg from '../assets/images/service_anti_wrinkle_1792302363235.jpg';
+import dermalFillersImg from '../assets/images/service_dermal_fillers_1792302364222.jpg';
+import advancedSkinImg from '../assets/images/service_advanced_skin_1792302365199.jpg';
+import clinicSuiteImg from '../assets/images/clinic_luxury_suite_1792302365394.jpg';
+
+export { heroSydneyImg, antiWrinkleImg, dermalFillersImg, advancedSkinImg, clinicSuiteImg };
 
 export const CLINIC_INFO = {
   name: 'SkinSpirit Cosmetic Clinic',
@@ -28,7 +35,7 @@ export const TREATMENTS: Treatment[] = [
     startingPrice: 149,
     duration: '20–30 mins',
     downtime: 'Zero downtime',
-    image: '/src/assets/images/service_anti_wrinkle_1792302363235.jpg',
+    image: antiWrinkleImg,
     popularAreas: ['Frown Lines (11s)', 'Forehead Lines', 'Crow’s Feet', 'Masseter Slimming', 'Lip Flip'],
     description: 'Precision micro-doses of purified muscle-relaxing proteins to soften unwanted expression lines while preserving your natural facial animation.',
     benefits: [
@@ -52,7 +59,7 @@ export const TREATMENTS: Treatment[] = [
     startingPrice: 299,
     duration: '30–45 mins',
     downtime: '1–2 days mild swelling',
-    image: '/src/assets/images/service_dermal_fillers_1792302364222.jpg',
+    image: dermalFillersImg,
     popularAreas: ['Natural Lip Refresh', 'Cheekbone Contouring', 'Chin Projection', 'Jawline Definition', 'Tear Trough'],
     description: '100% premium TGA-approved hyaluronic acid gels meticulously placed to restore youthful facial architecture with strict anti-duck-lip restraint.',
     benefits: [
@@ -76,7 +83,7 @@ export const TREATMENTS: Treatment[] = [
     startingPrice: 199,
     duration: '45–60 mins',
     downtime: 'Mild pink flush (12–24h)',
-    image: '/src/assets/images/service_advanced_skin_1792302365199.jpg',
+    image: advancedSkinImg,
     popularAreas: ['Dermapen 4 Microneedling', 'Clinical Chemical Peels', 'Profhilo Bio-Remodelling', 'Exosome Infusion'],
     description: 'Hospital-grade dermal rejuvenation targeting collagen synthesis, uneven pigmentation, acne scarring, and glass-skin radiance.',
     benefits: [
@@ -162,8 +169,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     treatment: '0.7mL Ultra-Fine Hyaluronic Gel',
     timeframe: '2 weeks post-treatment',
     description: 'Subtle enhancement focusing strictly on vertical hydration lines and Cupid’s bow definition, maintaining anatomical proportions without outward projection.',
-    beforeImage: '/src/assets/images/service_anti_wrinkle_1792302363235.jpg',
-    afterImage: '/src/assets/images/service_dermal_fillers_1792302364222.jpg',
+    beforeImage: antiWrinkleImg,
+    afterImage: dermalFillersImg,
     details: 'Client requested natural lip balance without noticeable swelling. Notice the clean restoration of vermilion borders and organic softness.'
   },
   {
@@ -173,8 +180,8 @@ export const BEFORE_AFTER_CASES: BeforeAfterCase[] = [
     treatment: '3 Areas TGA-Approved Micro-Dosing',
     timeframe: '14 days post-treatment',
     description: 'Smooth forehead and relaxed frown line appearance with full retention of natural eyebrow elevation and genuine smile lines.',
-    beforeImage: '/src/assets/images/clinic_luxury_suite_1792302365394.jpg',
-    afterImage: '/src/assets/images/hero_sydney_clinic_model_1792302362982.jpg',
+    beforeImage: clinicSuiteImg,
+    afterImage: heroSydneyImg,
     details: 'Custom calibrated dosage avoiding heaviness over the brow while completely eliminating horizontal stress creases.'
   }
 ];

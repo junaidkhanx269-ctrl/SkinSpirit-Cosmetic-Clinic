@@ -1,5 +1,5 @@
 import React from 'react';
-import { CLINIC_INFO, getWhatsAppLink } from '../data/clinicData';
+import { CLINIC_INFO, getWhatsAppLink, heroSydneyImg } from '../data/clinicData';
 import { ArrowUpRight, ShieldCheck, Sparkles, Star, MapPin } from 'lucide-react';
 
 interface HeroProps {
@@ -95,9 +95,13 @@ export const Hero: React.FC<HeroProps> = ({ onOpenPricing }) => {
               {/* Outer decorative frame with rounded-20px discipline */}
               <div className="relative rounded-[20px] overflow-hidden bg-[#ECE5DA] shadow-2xl border border-white/60">
                 <img
-                  src="/src/assets/images/hero_sydney_clinic_model_1792302362982.jpg"
+                  src={heroSydneyImg}
                   alt="Radiant Australian woman with natural aesthetic results at SkinSpirit Cosmetic Clinic Sydney"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    // Fallback to public folder path if bundled asset fails
+                    e.currentTarget.src = '/images/hero_sydney_clinic_model_1792302362982.jpg';
+                  }}
                   className="w-full h-auto object-cover aspect-[3/4] hover:scale-[1.02] transition-transform duration-700 ease-out"
                 />
 
